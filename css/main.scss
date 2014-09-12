@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 
 
 // Our variables
@@ -24,6 +24,13 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// Page defaults
+
+$background-pattern: url('/assets/halftone.png');
+
+// Teaser page
+$teaser-title-font-family: 'Playfair Display', serif;
+$teaser-title-font-size: 100px;
 
 
 // Using media queries with like this:
@@ -45,5 +52,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "teaser"
 ;
